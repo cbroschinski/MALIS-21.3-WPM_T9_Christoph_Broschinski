@@ -1,4 +1,4 @@
-# Beschreibung von datenintensiven und datenfokusierten Aktivitäten im eigenen Arbeitsalltag
+# Beschreibung von datenintensiven und datenfokussierten Aktivitäten im eigenen Arbeitsalltag
 
 In meinem Arbeitsalltag bin ich vor allem für das [OpenAPC-Projekt](https://github.com/OpenAPC/openapc-de) tätig, das Daten zum kostenpflichtigen Open Access-Publizieren sammelt, aufbereitet und veröffentlicht. Das gesamte Projekt ist dabei naturgemäß enorm datenintensiv: Die von unseren Teilnehmern und Teilnehmerinnen bereitgestellten Beiträge (alle Einreichungen zu OpenAPC geschehen auf freiwilliger Basis) müssen entgegengenommen, formatiert, angereichert, überprüft und dann strukturiert in unserem Repository abgelegt werden. Im Folgenden soll dieser Workflow näher erläutert werden.
 
