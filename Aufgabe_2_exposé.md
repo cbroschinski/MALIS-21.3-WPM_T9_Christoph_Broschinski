@@ -1,11 +1,11 @@
 
 # Implementation von Software-Lösungen für datenintensiven Prozesse und Datenanalysen
 
-Für die zweite Aufgabe würde ich im Wesentlichen gerne die Punkte umsetzen, die in der ersten Aufgabe im Abschnitt ["Verbesserungspotential"](https://github.com/cbroschinski/MALIS-21.3-WPM_T9_Christoph_Broschinski/blob/master/Aufgabe_1.md#verbesserungspotential) beschrieben wurden. Diese Änderungen hätten insbesondere den Vorteil, dass sie keinen toten Code darstellen, sondern tatsächlich sinnvolle und langfristig benötigte Verbesserungen der OpenAPC-Infrastruktur wären.
+Für die zweite Aufgabe würde ich im Wesentlichen gerne die Punkte umsetzen, die in der ersten Aufgabe im Abschnitt "[Verbesserungspotential](https://github.com/cbroschinski/MALIS-21.3-WPM_T9_Christoph_Broschinski/blob/master/Aufgabe_1.md#verbesserungspotential)" beschrieben wurden. Diese Änderungen hätten insbesondere den Vorteil, dass sie keinen toten Code ergeben, sondern tatsächlich sinnvolle und langfristig benötigte Verbesserungen der OpenAPC-Infrastruktur darstellen würden.
 
 ## Details
 
-Um das Test-Framework in Python zu erweitern, sind zunächst einige Vorarbeiten erforderlich. Diese sind strengenommen nicht Teil der Aufgabenstellung, der Vollständigkeit halber werden sie hier aber trotzdem aufgeführt.
+Um das Test-Framework in Python zu erweitern, sind zunächst einige Vorarbeiten erforderlich. Diese sind strenggenommen nicht Teil der Aufgabenstellung, der Vollständigkeit halber werden sie hier aber trotzdem aufgeführt.
 
 ### Vorarbeiten
 
@@ -28,7 +28,7 @@ Als letzter Schritt müsste noch eine zusätzliche Mapping-Tabelle geschaffen we
 
 ### Aufgabe
 
-Basierend auf den Vorarbeiten würde als eigentliche Aufgabe die Erstellung von automatisierten Tests für die Institutions-Datei anfallen. OpenAPC verwendet hierfür das [Pytest-Framework](https://pytest.org/), wobei es bereits eim umfassendes [Modul](https://github.com/OpenAPC/openapc-de/blob/master/python/test/test_apc_csv.py) zur Prüfung der OpenAPC-Daten gibt, aber auch kleinere Test-Dateien zur Überprüfung von [Toolkit-Funktionen](https://github.com/OpenAPC/openapc-de/blob/master/python/test/test_isbn_methods.py). Die Aufgabe wäre, eine zusätzliche Datei anzulegen, die Tests zur Überprüfung der Institutions-Datei enthält. Folgende Prüfungen sollten dabei mindestens stattfinden:
+Basierend auf den Vorarbeiten würde als eigentliche Aufgabe die Erstellung von automatisierten Tests für die Institutions-Datei anfallen. OpenAPC verwendet hierfür das [Pytest-Framework](https://pytest.org/), wobei es bereits ein umfassendes [Modul](https://github.com/OpenAPC/openapc-de/blob/master/python/test/test_apc_csv.py) zur Prüfung der OpenAPC-Daten gibt, aber auch kleinere Test-Sammlungen zur Überprüfung von [Toolkit-Funktionen](https://github.com/OpenAPC/openapc-de/blob/master/python/test/test_isbn_methods.py). Die Aufgabe wäre, eine zusätzliche Datei anzulegen, die Tests zur Überprüfung der Institutions-Datei enthält. Folgende Prüfungen sollten dabei mindestens stattfinden:
 
 - Überprüfung der `info_url` durch Aufruf und Auslesen des HTTP-Status. Hier ist vermutlich Feintuning erforderlich, um die Ausführung bei langen Response-Zeiten nicht zu sehr zu verzögern, eventuell lassen sich auch mehrere Aufrufe parallelisieren. Zudem wäre es konzeptuell anzuraten, Fehlschläge nur als Warnungen und nicht als `fail` auszugeben, da Nichterreichbarkeit einer URL sehr unterschiedliche Gründe haben kann.
 - Die Spalte `institution` gibt die Bezeichner im OpenAPC-Datensatz an. Diese sollten wechselseitig auf Vollständigkeit geprüft werden: Ist jeder Bezeichner aus dem Datensatz in der Institutions-Tabelle enthalten und umgekehrt?
