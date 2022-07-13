@@ -1,8 +1,8 @@
 
-# Implementation von Software-Lösungen für datenintensiven Prozesse und Datenanalysen
+# Implementation von Software-Lösungen für datenintensive Prozesse und Datenanalysen
 
 
-Die im [Exposé](https://github.com/cbroschinski/MALIS-21.3-WPM_T9_Christoph_Broschinski/blob/master/Aufgabe_2_expos%C3%A9.md) beschriebenen Verbesserungen wurden erfolgreich umgesetzt. Da die Änderungen direkt in das Projekt [OpenAPC](https://github.com/OpenAPC/openapc-de) einfließen sollen (bzw. bereits sind), ist der entsprechende Code dort zu finden. Als Abgabe dient der Branch [institution_table_testing](https://github.com/OpenAPC/openapc-de/commits/institution_table_testing) ab seinem Fork vom master-Branch ((f982a3d4)[https://github.com/OpenAPC/openapc-de/commit/f982a3d44a026d3304640e734d57126bc917a14f]).
+Die im [Exposé](https://github.com/cbroschinski/MALIS-21.3-WPM_T9_Christoph_Broschinski/blob/master/Aufgabe_2_expos%C3%A9.md) beschriebenen Verbesserungen wurden erfolgreich umgesetzt. Da die Änderungen direkt in das Projekt [OpenAPC](https://github.com/OpenAPC/openapc-de) einfließen sollen (bzw. bereits sind), ist der entsprechende Code dort zu finden. Als Abgabe dient der Branch [institution_table_testing](https://github.com/OpenAPC/openapc-de/commits/institution_table_testing) ab seinem Fork vom master-Branch ([f982a3d4](https://github.com/OpenAPC/openapc-de/commit/f982a3d44a026d3304640e734d57126bc917a14f)).
 
 Die im Sinne der Aufgabenstellung relevante Datei ist die neue [Testsammlung](https://github.com/OpenAPC/openapc-de/blob/institution_table_testing/python/test/test_institutions_table.py) für die [Institutionen-Tabelle](https://github.com/OpenAPC/openapc-de/blob/institution_table_testing/data/institutions.csv).
 
